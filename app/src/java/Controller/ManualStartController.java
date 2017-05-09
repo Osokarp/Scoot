@@ -5,27 +5,20 @@
  */
 package Controller;
 
-import Utility.ConnectionManager;
-import Utility.Encryption;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author PrakosoNB
  */
-@WebServlet(name = "LoginController", urlPatterns = {"/LoginController"})
-public class LoginController extends HttpServlet {
+@WebServlet(name = "ManualStartController", urlPatterns = {"/ManualStartController"})
+public class ManualStartController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -41,34 +34,7 @@ public class LoginController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            HttpSession session = request.getSession();
-            String user = request.getParameter("username");
-            String pswd = request.getParameter("password");
-            String pswdHash = Encryption.sha512Encryption(pswd);
-            Connection conn = null;
-            PreparedStatement connection = null;
-            ResultSet rs = null;
-        
-            try {
-
-                conn = ConnectionManager.getConnection();
-                connection = conn.prepareStatement("SELECT password FROM admin where username = ?");
-                connection.setString(1, user);
-                rs = connection.executeQuery();
-                while (rs.next()){
-                    String dbPswd = rs.getString(1);
-                    if (dbPswd.equals(pswdHash)){
-                        session.setAttribute("user", user);
-                        response.sendRedirect("main.html");
-                    }
-                }
-
-            } catch (SQLException ex) {
-                 System.out.println(ex);
-            } finally {
-                ConnectionManager.close(conn, connection, rs);
-            }
-            response.sendRedirect("index.html");
+            new ProcessBuilder("C:\\PathToExe\\MyExe.exe","-date " + request.getParameter("date")).start();
         }
     }
 

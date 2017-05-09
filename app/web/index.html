@@ -11,11 +11,24 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <script>
+            function hello(){
+                document.getElementById("size").disabled=true;
+            }
+        </script>
         <div>TODO write content</div>
+        <select>
+            <option value="hi" onclick="hello()">hi</option>
+            <option value="hi" onclick="hello()">hi</option>
+            <option onclick="hello()">harrow</option>
+        </select>
+        <input type="button" onclick="hello()"/>
+    
         <form action="LoginController" method="POST">
             Username:<input type="text" name="username"/>
             Password:<input type="password" name="password"/>
             <input type="submit" value="Login"/>
         </form>
+        <input type="text" id="size"/>Size
     </body>
 </html>

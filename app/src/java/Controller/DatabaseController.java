@@ -5,27 +5,26 @@
  */
 package Controller;
 
-import Utility.ConnectionManager;
-import Utility.Encryption;
+import Utility.Database;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author PrakosoNB
  */
-@WebServlet(name = "LoginController", urlPatterns = {"/LoginController"})
-public class LoginController extends HttpServlet {
+@WebServlet(name = "DatabaseController", urlPatterns = {"/DatabaseController"})
+public class DatabaseController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -41,34 +40,29 @@ public class LoginController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            HttpSession session = request.getSession();
-            String user = request.getParameter("username");
-            String pswd = request.getParameter("password");
-            String pswdHash = Encryption.sha512Encryption(pswd);
-            Connection conn = null;
-            PreparedStatement connection = null;
-            ResultSet rs = null;
-        
-            try {
-
-                conn = ConnectionManager.getConnection();
-                connection = conn.prepareStatement("SELECT password FROM admin where username = ?");
-                connection.setString(1, user);
-                rs = connection.executeQuery();
-                while (rs.next()){
-                    String dbPswd = rs.getString(1);
-                    if (dbPswd.equals(pswdHash)){
-                        session.setAttribute("user", user);
-                        response.sendRedirect("main.html");
-                    }
+            String type = request.getParameter("accesstype");
+            if (type.equals("create")){
+                String tablename = request.getParameter("tablename");
+                String fieldname = request.getParameter("fieldname");
+                String nullnotnull = request.getParameter("nullnotnull");
+                String datatype = request.getParameter("datatype");
+                String size = request.getParameter("size");
+                String decimal = request.getParameter("decimal");
+                List<String> settings = new ArrayList();
+                settings.add(tablename);
+                settings.add(fieldname);
+                settings.add(nullnotnull);
+                settings.add(datatype);
+                settings.add(size);
+                settings.add(decimal);
+                try {
+                    Database.addColumns(settings);
+                } catch (SQLException ex) {
+                    out.print(ex);
                 }
-
-            } catch (SQLException ex) {
-                 System.out.println(ex);
-            } finally {
-                ConnectionManager.close(conn, connection, rs);
+                
+                
             }
-            response.sendRedirect("index.html");
         }
     }
 
