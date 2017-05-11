@@ -5,8 +5,11 @@
  */
 package Controller;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,15 +37,16 @@ public class LogController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet LogController</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet LogController at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            File folder = new File("/path/to/files");
+            File[] listOfFiles = folder.listFiles();
+            for (int i = 0; i < listOfFiles.length; i++) {
+                File file = listOfFiles[i];
+                if (file.isFile() && file.getName().endsWith(".txt")) {
+                  Scanner in = new Scanner(new FileReader(file));
+                  /* do somthing with content */
+                } 
+              }
+            
         }
     }
 
