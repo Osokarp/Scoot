@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="RMS" name="description">
+    <meta content="JeanMin" name="author">
+    <link href="favi.ico" rel="shortcut icon">
+
+    <title>RMS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/carousel.css">
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  <style>
+	
+  </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+   <body>
+        <div class="navbar-wrapper">
+		
+       <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="fa fa-bars"></span>
+               
+              </button>
+             <a href="#" class="navbar-brand">RMS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li class=""><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+		
+		<li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Requests<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-file-text-o"></i> &nbsp;Create Request</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Refund Requests Parameters</li>
+                    <li><a href="requestoverview.html"><i class="fa fa-eye"></i>&nbsp;Overview</a></li>
+		    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Modify</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Notify Pax</li>
+		    <li><a href="#"><i class="fa fa-times"></i>  &nbsp;Rejected Requests</a></li>
+                </li>
+	      </ul>
+	      
+	      <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-credit-card"></i> E-Vouchers<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-eye"></i> &nbsp;Overview</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">E-Voucher Creation</li>
+		    <li><a href="exampleCalc.html"><i class="fa fa-filter"></i>&nbsp;Filter Refund Requests</a></li>
+                    <li><a href="exampleCalc.html"><i class="fa fa-pencil"></i>&nbsp;Create E-Voucher</a></li>
+		    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Create Credit-shell</a></li>
+                </li>
+	      </ul>
+		  
+		<li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Notify<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-eye"></i> &nbsp;Overview</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Notify Pax of E-voucher</li>
+                    <li><a href="exampleCalc.html"><i class="fa fa-envelope-o"></i>&nbsp;E-mail Pax</a></li>
+		    <li><a href="#"><i class="fa fa-check"></i>&nbsp;Notification Successful</a></li>
+		    <li><a href="#"><i class="fa fa-times"></i> &nbsp;Notification Failed</a></li>
+                </li>
+	      	</ul>
+		
+		<li><form class="navbar-form navbar-left" role="search">
+        		<div class="form-group">
+          		<input type="text" class="form-control input-sm" placeholder="Search">
+        		</div>
+        		<a class="btn btn-default btn-xs" href="gosearch.html">Go</button></a>
+      		    </form>
+		</li>		
+		</ul>
+	      
+		<ul class="nav navbar-nav navbar-right">	
+		
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-gears"></i> Support & Access<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                   
+					<li class="dropdown-header">Support </li>
+					<li><a href="#"><i class="fa fa-arrows"></i> Workflow Chart</a></li>
+					<li><a href="#"><i class="fa fa-book"></i> &nbsp;RMS Manual</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Identity & Access </li>
+					<li><a href="#"><i class="fa fa-lock"></i> Manage Users & Access Restriction</a></li>
+		  </li>
+		  </ul>
+		  
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-user"></i> CSR<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                   
+					<li><a href="#"><i class="fa fa-child"></i> &nbsp;My profile</a></li>
+					<li class="divider"></li>
+					<li><a href="index.html"><i class="fa fa-power-off"></i> Log out</a></li>
+		  </li>
+		  </ul>
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="badge">5</span><b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+					<li class="dropdown-header">Latest Activity </li>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspA1ZGRL</li></a>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspI6M4UZ</li></a>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspB8DJ9Q</li></a>
+					<li class="divider"></li>
+					<li class="dropdown-header">Action Items <span class="badge">5</span></li>
+					<li><a href="actionitems.html">View all action items</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspNEMYGB</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspRDCU4E</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspLCC4SX</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspE9S8RA</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspFZV6FL</li></a>
+					<li class="dropdown-header">Expedited Items <span class="badge">0</span></li>
+		  </li>
+		  </ul>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+        </div>
+		</ul>
+		
+		 <span class="logoSQ"><img alt="SIA" src="images/Scoot_Logo.png" class="logoImg"></span>
+		 
+            </div>
+			
+          </div>
+		  
+        </div>
+
+      </div>
+		
+	</div>
+	<div class="featurette-divider"/>
+	
+	
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <div class="jumbotron light">
+       
+		<div class="row">
+		 <h2 class="well">Create Refund Request</h2>
+		 
+		    </br><p><h4><img alt="greentick" src="images/greentick.png"><b>&nbspSubmitted</b></h4>
+		    <h5><b>Pending SPC processing</h5></b></p></br>
+		    
+		    <button type="button" class="btn btn-danger" disabled="disabled">Expedited Case</button></br></br>
+		    
+		    <h4>Amount:</h4>
+		    <button type="button" class="btn btn-info" disabled="disabled">136.95</button></br></br></br>
+		    
+		    <div class="panel panel-default" style="width:140px">
+			    <div class="panel-body">
+				<form role="form">
+				    <div class="form-group">
+					<h3><label for="InputPNR">PNR*</label></h3>
+					<textarea class="form-control" rows="1" style="width:100px" disabled="disabled">C8HZKD</textarea>
+				    </div>
+				</form>
+			    </div>
+		    </div>
+		
+		<div class="panel panel-default" style="width:640px">
+			<div class="panel-body">
+			    <form role="form">
+				<div class="form-group">
+				    <h5>Reason of Refund*</h5>
+				    <select class="form-control" style="width:300px" disabled="disabled">
+					<option>Rule Exception</option>
+				    </select>
+				    
+				    <h5>Mode of Refund*</h5>
+				    <select class="form-control" style="width:300px" disabled="disabled">
+				        <option>E-Voucher</option>
+				    </select>
+				    
+				    <h5>Remarks*</h5>
+					<textarea class="form-control" rows="auto" style="width:600px" disabled="disabled">Pregnancy.</textarea>
+				</div>
+			    </form>    
+			</div>
+		    </div>
+
+		    <div class="panel panel-default" style="width:230px">
+			<div class="panel-body">
+			    <form role="form">
+				<div class="form-group">
+				    <h5>Attachments</h5></br>
+				    <div class="row">
+					<div class="col-xs-6 col-md-3">
+					<a href="images/N2DERY_ID.pdf"><img src="images/pdf.png" alt="PDF" width="60" height="60"></a>
+					</div>
+					
+					<div class="col-xs-6 col-md-3">
+					<a href="images/Death.jpg"><img src="images/jpeg.png" alt="PDF" width="60" height="60"></a>
+					</div>
+					
+				    </div>
+				</div>
+			    </form>    
+			</div>
+		    </div>
+		
+		<div class="container">
+		    <a class="btn btn-default" href="createrequest.html" role="button">Create new request</a>
+		   &nbsp;&nbsp;&nbsp
+		    <a class="btn btn-default" href="home.html" role="button">Home</a>
+		</div>
+		
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>&copy; 2012 Scoot&#8482; Pte Ltd. All Rights Reserved.  
+				
+			</p>
+		</footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+	<script>
+		
+		function showRes(){
+			$('#searchRes').show();
+			scroll($('#searchRes'),60);
+		}
+		function scroll(div,offset){
+			// Scroll to the popup
+			var scrollTo = (div).offset().top;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: scrollTo - offset }, 500);
+			
+		}
+		
+	</script>
+  
+
+</body></html>

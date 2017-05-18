@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="RMS" name="description">
+    <meta content="JeanMin" name="author">
+    <link href="favi.ico" rel="shortcut icon">
+
+    <title>RMS (SPC2 Start)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>  
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/carousel.css">
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  <style>
+	
+  </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+<body>
+        <div class="navbar-wrapper">
+		
+       <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="fa fa-bars"></span>
+               
+              </button>
+             <a href="#" class="navbar-brand">RMS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li class=""><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+		
+		<li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Requests<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-file-text-o"></i> &nbsp;Create Request</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Refund Requests Parameters</li>
+                    <li><a href="requestoverview.html"><i class="fa fa-eye"></i>&nbsp;Overview</a></li>
+		    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Modify</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Notify Pax</li>
+		    <li><a href="#"><i class="fa fa-times"></i>  &nbsp;Rejected Requests</a></li>
+                </li>
+	      </ul>
+	      
+	      <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-credit-card"></i> E-Vouchers<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-eye"></i> &nbsp;Overview</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">E-Voucher Creation</li>
+		    <li><a href="exampleCalc.html"><i class="fa fa-filter"></i>&nbsp;Filter Refund Requests</a></li>
+                    <li><a href="exampleCalc.html"><i class="fa fa-pencil"></i>&nbsp;Create E-Voucher</a></li>
+		    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Create Credit-shell</a></li>
+                </li>
+	      </ul>
+		  
+		<li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Notify<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-eye"></i> &nbsp;Overview</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Notify Pax of E-voucher</li>
+                    <li><a href="exampleCalc.html"><i class="fa fa-envelope-o"></i>&nbsp;E-mail Pax</a></li>
+		    <li><a href="#"><i class="fa fa-check"></i>&nbsp;Notification Successful</a></li>
+		    <li><a href="#"><i class="fa fa-times"></i> &nbsp;Notification Failed</a></li>
+                </li>
+	      	</ul>
+		
+		<li><form class="navbar-form navbar-left" role="search">
+        		<div class="form-group">
+          		<input type="text" class="form-control input-sm" placeholder="Search">
+        		</div>
+        		<a class="btn btn-default btn-xs" href="gosearch.html">Go</button></a>
+      		    </form>
+		</li>		
+		</ul>
+	      
+		<ul class="nav navbar-nav navbar-right">	
+		
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-gears"></i> Support & Access<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                   
+					<li class="dropdown-header">Support </li>
+					<li><a href="#"><i class="fa fa-arrows"></i> Workflow Chart</a></li>
+					<li><a href="#"><i class="fa fa-book"></i> &nbsp;RMS Manual</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Identity & Access </li>
+					<li><a href="#"><i class="fa fa-lock"></i> Manage Users & Access Restriction</a></li>
+		  </li>
+		  </ul>
+		  
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-user"></i> SPC<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                   
+					<li><a href="#"><i class="fa fa-child"></i> &nbsp;My profile</a></li>
+					<li class="divider"></li>
+					<li><a href="index.html"><i class="fa fa-power-off"></i> Log out</a></li>
+		  </li>
+		  </ul>
+		  
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="badge">6</span><b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+					<li class="dropdown-header">Latest Activity </li>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspA1ZGRL</li></a>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspI6M4UZ</li></a>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspB8DJ9Q</li></a>
+					<li class="divider"></li>
+					<li class="dropdown-header">Action Items <span class="badge">5</span></li>
+					<li><a href="actionitems.html">View all action items</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspNEMYGB</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspRDCU4E</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspLCC4SX</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspE9S8RA</li></a>
+					<li><a href="#"><img alt="flagged" src="images/flagged.png">&nbspFZV6FL</li></a>
+					<li class="dropdown-header">Expedited Items <span class="badge">0</span></li>
+		  </li>
+		  </ul>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+        </div>
+		</ul>
+		
+		 <span class="logoSQ"><img alt="SIA" src="images/Scoot_Logo.png" class="logoImg"></span>
+		 
+            </div>
+			
+          </div>
+		  
+        </div>
+
+      </div>
+		
+	</div>
+	<div class="featurette-divider"/>
+	
+	
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <div class="jumbotron light">
+		<div class="row">
+		 <h2 class="well">Send Vouchers</h2>
+                
+                <div class="container">
+                <span class="pull-right">
+                    <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Pending: 7</button>
+                </span>    
+                </div>
+                </br></br>
+                <b>Expedited Cases:</b>
+		<span class="pull-right"><span class="badge"><a href="#"><i class="fa fa-refresh"></i></span></a></span>
+		<table class="table table-bordered table-hover tablesorter" id="mytable">
+		<thead>
+		<tr>
+		    <th><input type="checkbox" checked></th>
+		    <th>PNR</th>
+		    <th>Refund Reason</th>
+		    <th>E-mail</th>
+                    <th>Validity/</br>Exp Date</th>
+		    <th>VO Code</th>
+		    <th>VO Number/</br>Amt</th>
+		    <th>E-mail Template</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+		    <td><input type="checkbox"></td>
+		    <td>T2HCHY</td>
+		    <td>Rule Exception</td>
+		    <td>mrmaxofori1@outlook.fr</td>
+		    <td>SGD</td>
+		    <td>439.00</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>Guest Promise</option>
+					<option>POS KRW</option>
+					<option>Duplicated bookings</option>
+					<option>Others</option>
+				    </select></td>
+		</tr>
+		
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>C8HZKD</td>
+		    <td>Rule Exception</td>
+		    <td>wen.angeline@outlook.com</td>
+                    <td>SGD</td>
+		    <td>233.90</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>Guest Promise</option>
+					<option>POS KRW</option>
+					<option>Duplicated bookings</option>
+					<option>Others</option>
+				    </select></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>TR4J12</td>
+		    <td>Double/ Triple Booking</td>
+		    <td>kirsten2054@gmail.com</td>
+                    <td>KRW</td>
+		    <td>818,000.00</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+					<option>Duplicated bookings</option>
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>Guest Promise</option>
+					<option>POS KRW</option>
+					<option>Others</option>
+				    </select></td>
+                </tr>
+                
+		</tbody>
+		</table>
+                
+                <span class="pull-right">
+                    <a class="btn btn-default" href="spcvalidaterequest.html" role="button">Send</a>
+                </span>
+                </div>
+                </br></br>
+
+                <div class="row">
+                <b>This Week:</b>
+		<span class="pull-right"><span class="badge"><a href="#"><i class="fa fa-refresh"></i></span></a></span>
+		<table class="table table-bordered table-hover tablesorter" id="mytable">
+		<thead>
+		<tr>
+		    <th><input type="checkbox" checked></th>
+		    <th>PNR</th>
+		    <th>Refund Reason</th>
+		    <th>E-mail</th>
+                    <th>Validity/</br>Exp Date</th>
+		    <th>VO Code</th>
+		    <th>VO Number/</br>Amt</th>
+		    <th>E-mail Template</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>UD6QYX</td>
+		    <td>POS KRW Refund</td>
+		    <td>abe.shelton1@lenta.ru</td>
+                    <td>KRW</td>
+		    <td>612,000.00</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+		    			<option>POS KRW</option>
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>Guest Promise</option>
+					<option>Duplicated bookings</option>
+					<option>Others</option>
+				    </select></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>UDJG3E</td>
+		    <td>POS KRW Refund</td>
+		    <td>wpt17799@gmail.com</td>
+		    <td>SGD</td>
+		    <td>50.00</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+					<option>POS KRW</option>
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>Guest Promise</option>
+					<option>Duplicated bookings</option>
+					<option>Others</option>
+				    </select></td>
+                </tr>
+                
+		</tbody>
+		</table>
+                
+                <span class="pull-right">
+                    <a class="btn btn-default" href="spcvalidaterequest.html" role="button">Send</a>
+                </span>
+                </div>
+                </br></br>
+                
+                <div class="row">
+                <b>Last Month:</b>
+		<span class="pull-right"><span class="badge"><a href="#"><i class="fa fa-refresh"></i></span></a></span>
+		<table class="table table-bordered table-hover tablesorter" id="mytable">
+		<thead>
+		<tr>
+		    <th><input type="checkbox" checked></th>
+		    <th>PNR</th>
+		    <th>Refund Reason</th>
+		    <th>E-mail</th>
+                    <th>Validity/</br>Exp Date</th>
+		    <th>VO Code</th>
+		    <th>VO Number/</br>Amt</th>
+		    <th>E-mail Template</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+		    <td><input type="checkbox"></td>
+		    <td>V4556S</td>
+		    <td>Guest Promise (Undelivered SSRs)</td>
+		    <td>london7@pdcheif.com</td>
+		    <td>SGD</td>
+		    <td>50.00</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+					<option>Guest Promise</option>
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>POS KRW</option>
+					<option>Duplicated bookings</option>
+					<option>Others</option>
+				    </select></td>
+		</tr>
+		
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>W8N3UW</td>
+		    <td>Double/Triple Booking</td>
+		    <td>ha0953305@gmail.com</td>
+		    <td>SGD</td>
+		    <td>322.90</td>
+		    <td>1</td>
+		    <td><select class="form-control" style="width:300px">
+					<option>Duplicated bookings</option>
+					<option>Rule Exception</option>
+					<option>Schedule Change</option>
+					<option>Guest Promise</option>
+					<option>POS KRW</option>
+					<option>Others</option>
+				    </select></td>
+                </tr>
+                
+		</tbody>
+		</table>
+                
+                <span class="pull-right">
+                    <a class="btn btn-default" href="spcvalidaterequest.html" role="button">Send</a>
+                </span>
+                </div>
+		</br></br></br>
+		<span class="pull-right">
+                    <a class="btn btn-danger" href="spcsendvouchers2.html" role="button">Send ALL</a>
+                </span>
+                
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>&copy; 2012 Scoot&#8482; Pte Ltd. All Rights Reserved.  
+				
+			</p>
+		</footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	<script>
+		
+		function showRes(){
+			$('#searchRes').show();
+			scroll($('#searchRes'),60);
+		}
+		function scroll(div,offset){
+			// Scroll to the popup
+			var scrollTo = (div).offset().top;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: scrollTo - offset }, 500);
+			
+		}
+		
+		$(document).ready(function(){
+		$(function(){
+		$("#mytable").tablesorter();
+		});
+		});
+                
+                // Listen for click on toggle checkbox
+		$('#select-all').click(function(event) {   
+		 if(this.checked) {
+		// Iterate each checkbox
+		$(':checkbox').each(function() {
+		this.checked = true;                        
+		});
+		}
+		else {
+		// Iterate each checkbox
+		$(":checkbox").each(function() {
+		this.checked = false;
+		});
+		}
+		});
+		
+    </script>
+  
+
+</body></html>

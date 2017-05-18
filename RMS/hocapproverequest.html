@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="RMS" name="description">
+    <meta content="JeanMin" name="author">
+    <link href="favi.ico" rel="shortcut icon">
+
+    <title>RMS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/carousel.css">
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  <style>
+	
+  </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+   <body>
+        <div class="navbar-wrapper">
+		
+       <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="fa fa-bars"></span>
+               
+              </button>
+             <a href="#" class="navbar-brand">RMS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li class=""><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+		
+		<li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Requests<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-file-text-o"></i> &nbsp;Create Request</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Refund Requests Parameters</li>
+                    <li><a href="requestoverview.html"><i class="fa fa-eye"></i>&nbsp;Overview</a></li>
+		    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Modify</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Notify Pax</li>
+		    <li><a href="#"><i class="fa fa-times"></i>  &nbsp;Rejected Requests</a></li>
+                </li>
+	      </ul>
+	      
+	      <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-credit-card"></i> E-Vouchers<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-eye"></i> &nbsp;Overview</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">E-Voucher Creation</li>
+		    <li><a href="exampleCalc.html"><i class="fa fa-filter"></i>&nbsp;Filter Refund Requests</a></li>
+                    <li><a href="exampleCalc.html"><i class="fa fa-pencil"></i>&nbsp;Create E-Voucher</a></li>
+		    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Create Credit-shell</a></li>
+                </li>
+	      </ul>
+		  
+		<li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Notify<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createrequest.html"><i class="fa fa-eye"></i> &nbsp;Overview</a></li>
+		    <li class="divider"></li>
+		    <li class="dropdown-header">Notify Pax of E-voucher</li>
+                    <li><a href="exampleCalc.html"><i class="fa fa-envelope-o"></i>&nbsp;E-mail Pax</a></li>
+		    <li><a href="#"><i class="fa fa-check"></i>&nbsp;Notification Successful</a></li>
+		    <li><a href="#"><i class="fa fa-times"></i> &nbsp;Notification Failed</a></li>
+                </li>
+	      	</ul>
+		
+		<li><form class="navbar-form navbar-left" role="search">
+        		<div class="form-group">
+          		<input type="text" class="form-control input-sm" placeholder="Search">
+        		</div>
+			<a class="btn btn-default btn-xs" href="gosearch.html">Go</button></a>
+      		    </form>
+		</li>		
+		</ul>
+	      
+		<ul class="nav navbar-nav navbar-right">	
+		
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-gears"></i> Support & Access<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                   
+					<li class="dropdown-header">Support </li>
+					<li><a href="#"><i class="fa fa-arrows"></i> Workflow Chart</a></li>
+					<li><a href="#"><i class="fa fa-book"></i> &nbsp;RMS Manual</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Identity & Access </li>
+					<li><a href="#"><i class="fa fa-lock"></i> Manage Users & Access Restriction</a></li>
+		  </li>
+		  </ul>
+		  
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-user"></i> HOC<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                   
+					<li><a href="#"><i class="fa fa-child"></i> &nbsp;My profile</a></li>
+					<li class="divider"></li>
+					<li><a href="index.html"><i class="fa fa-power-off"></i> Log out</a></li>
+		  </li>
+		  </ul>
+		  
+		  <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="badge">3</span><b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+					<li class="dropdown-header">Latest Activity </li>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspA1ZGRL</li></a>
+					<li><a href="#"><img alt="greentick" src="images/greentick.png">&nbspI6M4UZ</li></a>
+					<li class="divider"></li>
+					<li><a href="spcactionitems.html">View all action items</li></a>
+					<li class="dropdown-header">Action Items <span class="badge">2</span></li>
+					<li><a href="spcvalidaterequest.html"><img alt="flagged" src="images/flagged.png">&nbspC8HKZD</li></a>
+                                        <li><a href="spcvalidaterequestcc.html"><img alt="flagged" src="images/flagged.png">&nbspFYLC8K</li></a>
+					<li class="dropdown-header">Expedited Items <span class="badge">1</span></li>
+                                        <li><a href="spcvalidaterequestba.html"><img alt="flagged" src="images/flagged.png">&nbspYZY3GR</li></a>
+		  </li>
+		  </ul>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+		  <div class="col-md-1"></div>
+        </div>
+		</ul>
+		
+		 <span class="logoSQ"><img alt="SIA" src="images/Scoot_Logo.png" class="logoImg"></span>
+		 
+            </div>
+			
+          </div>
+		  
+        </div>
+
+      </div>
+		
+	</div>
+	<div class="featurette-divider"/>
+	
+	
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <div class="jumbotron light">
+       
+		<div class="row">
+		 <h2 class="well">Approve Refund Request</h2>
+		 
+		 </br><p><h4>Requested by:</b></h4>
+		    <h5><b>SPC (03-Oct-14)</h5></b></p></br>
+		    
+		    <div class="panel panel-default" style="width:140px">
+			    <div class="panel-body">
+				<form role="form">
+				    <div class="form-group">
+					<h3><label for="InputPNR">PNR*</label></h3>
+					<textarea class="form-control" rows="1" style="width:100px" disabled="disabled">C8HZKD</textarea>
+				    </div>
+				</form>
+			    </div>
+		    </div>
+		    
+		    <div class="panel panel-default" style="width:640px">
+			<div class="panel-body">
+			    <form role="form">
+				<div class="form-group">
+				    <h5>Reason of Refund*</h5>
+				    <select class="form-control" style="width:300px" disabled="disabled">
+					<option>Rule Exception</option>
+				    </select>
+				    
+				    <h5>Mode of Refund*</h5>
+				    <select class="form-control" style="width:300px" disabled="disabled">
+				        <option>E-Voucher</option>
+				    </select>
+				    
+				    <h5>Remarks*</h5>
+					<textarea class="form-control" rows="auto" style="width:600px" disabled="disabled">Pregnancy.</textarea>
+				</div>
+			    </form>    
+			</div>
+		    </div>
+
+		    <div class="panel panel-default" style="width:230px">
+			<div class="panel-body">
+			    <form role="form">
+				<div class="form-group">
+				    <h5>Attachments</h5></br>
+				    <div class="row">
+					<div class="col-xs-6 col-md-3">
+					<a href="images/N2DERY_ID.pdf"><img src="images/pdf.png" alt="PDF" width="60" height="60"></a>
+					</div>
+					
+					<div class="col-xs-6 col-md-3">
+					<a href="images/Death.jpg"><img src="images/jpeg.png" alt="PDF" width="60" height="60"></a>
+					</div>
+					
+				    </div>
+				</div>
+			    </form>    
+			</div>
+		    </div>
+
+		    <div class="panel panel-default" style="width:550px">
+			<div class="panel-body">
+			    <h4><b>Booking Details:</b></h4>
+			    <form class="form-inline" role="form">
+				
+				<div class="form-group">
+				<h5>Name:</h5>
+				    <label class="sr-only" for="enterName">Name</label>
+				    <textarea class="form-control" rows="1" style="width:350px" disabled="disabled">Wen Angeline</textarea>
+				</div>
+				
+				<div class="form-group">
+				<h5>No. of Pax:</h5>
+				    <label class="sr-only" for="NumberofPassengers">NoofPax</label>
+ 				    <textarea class="form-control" rows="1" style="width:100px" disabled="disabled">2</textarea>
+				</div></br>
+				
+				<div class="form-group">
+				<h5>Origin-Destination:</h5>
+				    <label class="sr-only" for="CountryofOrigintoDestination">Origin-Destination</label>
+				    <textarea class="form-control" rows="1" style="width:200px" disabled="disabled">SYD-SIN</textarea>
+				</div>
+				
+				<div class="form-group">
+				<h5>Trip:</h5>
+				    <label class="sr-only" for="SingleorRound">Single/Round</label>
+				    <textarea class="form-control" rows="1" style="width:200px" disabled="disabled">Single</textarea>
+				</div></br>
+				
+				<div class="form-group">
+				<h5>Mode of Payment:</h5>
+				    <label class="sr-only" for="MOP">MOP</label>
+				    <textarea class="form-control" rows="1" style="width:200px" disabled="disabled">E-Voucher</textarea>
+				</div>
+				
+				<div class="form-group">
+				<h5>Currency/Amount:</h5>
+				    <label class="sr-only" for="CurrAmt">Currency/Amount</label>
+				    <textarea class="form-control" rows="1" style="width:150px" disabled="disabled">SGD</textarea>
+				</div></br>
+				
+				<div class="form-group">
+				<h5>Email:</h5>
+				    <label class="sr-only" for="Email">Email</label>
+				    <textarea class="form-control" rows="1" style="width:400px" disabled="disabled">wen.angeline@outlook.com</textarea>
+				</div>
+				
+			    </form>
+			</div>
+		    </div>
+
+		    <div class="panel panel-default" style="width: 500px">
+			<div class="panel-body">
+			    <h4><b>Flight Details:</b></h4></br>
+			    <table class="table table-hover">
+			        <tr>
+				<th><u>Flight No.</u></th>
+				<th><u>Date</u></th>
+				<th><u>Route</u></th>
+				<th><u>Status</u></th>
+				<th><u>Option</u></th>
+				</tr>
+				
+				<tr>
+				<td>TZ205</td>
+				<td>29 Sep 14</td>
+				<td>SYD-SIN</td>
+				<td>No-show</td>
+				<td><a class="btn btn-default btn-xs" href="#" role="button" onclick="toggle_visibility('FeeBreakdown'); return false;">Calculate</a></td>
+				</tr>
+				
+			    </table>
+			</div>
+		    </div>
+		    
+
+		<!-- Hidden Fee Breakdown -->
+		<div style="display: none;" id="FeeBreakdown">
+		    <div class="panel panel-default" style="width: 500px; height: auto">
+			<div class="panel panel-default" style="width: auto">
+			<div class="panel-body">
+			    <img src="images/breakdowneg.jpg" alt="FeeBreakdownExample">
+			</div>
+			</div>
+		    </div>
+		</div> <!-- End of Hidden Fee Breakdown -->
+		
+		<div class="panel panel-default" style="width:550px">
+			<div class="panel-body">
+			    <h4><b>Voucher Details:</b></h4>
+			    <form class="form-inline" role="form">
+				
+				<div class="form-group">
+				<h5>No. of VO(s) required:</h5>
+				    <label class="sr-only" for="enterName">NoofVouchers</label>
+				    <textarea class="form-control" rows="1" style="width:50px">1</textarea>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<div class="form-group">
+				<h5>Currency:</h5>
+				    <label class="sr-only" for="Currency">Currency</label>
+ 				    <textarea class="form-control" rows="1" style="width:100px">SGD</textarea>
+				</div></br>
+				
+				<div class="form-group">
+				<h5>Per VO value:</h5>
+				    <label class="sr-only" for="pervovalue">PerVOvalue</label>
+				    <textarea class="form-control" rows="1" style="width:100px">136.95</textarea>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<div class="form-group">
+				<h5>Total:</h5>
+				    <label class="sr-only" for="TotalFee">TotalFee</label>
+				    <textarea class="form-control" rows="1" style="width:100px">136.95</textarea>
+				</div></br>
+				
+				<div class="form-group">
+				<h5>Purpose of VO:</h5>
+				    <label class="sr-only" for="PurpofVO">PurpofVO</label>
+				    <textarea class="form-control" rows="1" style="width:170px">Customer Service</textarea>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<div class="form-group">
+				<h5>Transferable:</h5>
+				    <label class="sr-only" for="Transferable">Transferable</label>
+				    <textarea class="form-control" rows="1" style="width:60px">Yes</textarea>
+				</div></br></br>
+				<a class="btn btn-default btn-xs" href="#" role="button" onclick="toggle_visibility('Otherdetails'); return false;">Other details/ Travel Permission</a>
+				
+				<div style="display: none;" id="Otherdetails">
+				    </br>
+				    <div class="form-group">
+				    <h5>Max pax allowed per VO:</h5>
+					<label class="sr-only" for="pervovalue">MaxPaxPerVOvalue</label>
+					<textarea class="form-control" rows="1" style="width:200px; background-color:#FCF5D8">No limit (Default max = 50)</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>Max VO(s) allowed per booking:</h5>
+				        <label class="sr-only" for="MaxVOPerBking">MaxVOPerBking</label>
+				        <textarea class="form-control" rows="1" style="width:150px; background-color:#FCF5D8">No limit</textarea>
+				    </div></br>
+				    
+				    <div class="form-group">
+				    <h5>Expiration Type:</h5>
+					<label class="sr-only" for="ExpType">ExpType</label>
+					<textarea class="form-control" rows="1" style="width:100px; background-color:#FCF5D8">Calculated</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>No. of valid days (if calculated):</h5>
+				        <label class="sr-only" for="NoValidDays">NoValidDays</label>
+				        <textarea class="form-control" rows="1" style="width:60px; background-color:#FCF5D8">183</textarea>
+				    </div></br>
+				    
+				    <div class="form-group">
+				    <h5>Expiration Usage:</h5>
+					<label class="sr-only" for="ExpUsg">ExpUsg</label>
+					<textarea class="form-control" rows="1" style="width:250px; background-color:#FCF5D8">Travel booked by Expiration Date</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>Expiration Date (DD-MMM-YY):</h5>
+				        <label class="sr-only" for="ExpDate">ExpDate</label>
+				        <textarea class="form-control" rows="1" style="width:100px; background-color:#FCF5D8">Calculated</textarea>
+				    </div></br></br>
+				    
+				    <h4><b>Travel Permission:</b></h4>
+				
+				    <div class="form-group">
+				    <h5>Travel start-end date (DD-MMM-YY):</h5>
+					<label class="sr-only" for="Travelstartend">Travelstartend</label>
+					<textarea class="form-control" rows="1" style="width:200px; background-color:#FCF5D8">NIL</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>Blackout travel period (DD-MMM-YY to DD-MMM-YY):</h5>
+				        <label class="sr-only" for="Blackouttravelperiod">Blackouttravelperiod</label>
+				        <textarea class="form-control" rows="1" style="width:220px; background-color:#FCF5D8">NIL</textarea>
+				    </div></br>
+				    
+				    <div class="form-group">
+				    <h5>Travel Country/ City Pair:</h5>
+					<label class="sr-only" for="TravelCountryCityPair">TravelCountryCityPair</label>
+					<textarea class="form-control" rows="1" style="width:200px; background-color:#FCF5D8">Any</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>Travel Day:</h5>
+				        <label class="sr-only" for="TravelDay">TravelDay</label>
+				        <textarea class="form-control" rows="1" style="width:200px; background-color:#FCF5D8">Any</textarea>
+				    </div></br>
+				    
+				    <div class="form-group">
+				    <h5>Travel Uses:</h5>
+					<label class="sr-only" for="TravelUses">TravelUses</label>
+					<textarea class="form-control" rows="1" style="width:200px; background-color:#FCF5D8">Any</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>Other Services uses:</h5>
+				        <label class="sr-only" for="OtherServicesuses">OtherServicesuses</label>
+				        <textarea class="form-control" rows="1" style="width:150px; background-color:#FCF5D8">None</textarea>
+				    </div></br>
+				    
+				    <div class="form-group">
+				    <h5>VO usage:</h5>
+					<label class="sr-only" for="VOusage">VOusage</label>
+					<textarea class="form-control" rows="1" style="width:200px; background-color:#FCF5D8">Fares, Taxes & Fees</textarea>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;
+				    <div class="form-group">
+				    <h5>Seat class:</h5>
+				        <label class="sr-only" for="Seatclass">Seatclass</label>
+				        <textarea class="form-control" rows="1" style="width:220px; background-color:#FCF5D8">Economy & ScootBiz, Groups</textarea>
+				    </div></br>
+				    
+				    <div class="form-group">
+				    <h5>Fees for Travel:</h5>
+				        <label class="sr-only" for="FeesforTravel">FeesforTravel</label>
+				        <textarea class="form-control" rows="2" style="width:420px; background-color:#FCF5D8">Travel fees, Upgrade fees, Name change fees, Seat fees, SSR fees</textarea>
+				    </div></br></br>
+				    
+				</div>
+			    </form>
+			</div>
+		    </div>
+		
+		<div class="btn-toolbar" role="toolbar" disabled="disabled">
+			    <div class="btn-group">
+			     <center><u><b>Fees:</b></u></br></center>
+				<h5>RCF:</h5>
+				    <textarea class="form-control" rows="1" style="width:80px">18</textarea>
+				<h5>RFCT:</h5>
+				    <textarea class="form-control" rows="1" style="width:80px">109.95</textarea>
+				<h5>RFCF:</h5>
+				    <textarea class="form-control" rows="1" style="width:80px">18</textarea>
+				<h5>RAC:</h5>
+				    <textarea class="form-control" rows="1" style="width:80px">0</textarea>
+			    </br>
+			    </div>
+			    </div>
+		
+		<div class="btn-group">
+			    <center><u><b>Amount:</b></u></br></center>
+			    <button type="button" class="btn btn-info" disabled="disabled">136.94</button></br></br></br>
+			    </div>
+			    </div>
+		
+		<div class="container">
+		    <a class="btn btn-success" href="hocapproverequest2.html" role="button">Approve</a>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <a class="btn btn-danger" href="spcrejectrequestevouch.html" role="button">Reject</a>
+		</div>
+		
+		
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>&copy; 2012 Scoot&#8482; Pte Ltd. All Rights Reserved.  
+				
+			</p>
+		</footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+	<script>
+		
+		function showRes(){
+			$('#searchRes').show();
+			scroll($('#searchRes'),60);
+		}
+		function scroll(div,offset){
+			// Scroll to the popup
+			var scrollTo = (div).offset().top;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: scrollTo - offset }, 500);
+			
+		}
+		
+	        function toggle_visibility(id) {
+			//hide & show
+			var e = document.getElementById(id);
+			if(e.style.display == 'block')
+			e.style.display = 'none';
+			else
+		       e.style.display = 'block';
+		}
+//-->
+
+	</script>
+  
+
+</body>
+</html>
