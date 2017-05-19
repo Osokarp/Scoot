@@ -1,0 +1,87 @@
+.carousel-control .icon{
+		position:absolute;
+		top:230px;
+		font-size:30px;
+	}
+	.LogoIcon{
+		font-size: 40px;
+		line-height: 0;
+		position: relative;
+		top: 5px;
+	}
+	.logoSQ{
+		 /*background-color: #eee;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    height: 46px;
+    padding: 0 4px;*/
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    width: 130px;
+	}
+	.logoImg{
+		 height: 80px;
+		 }
+		 
+		 .navbar-nav  [class^="icon-"], .navbar-nav   [class*=" icon-"]{
+			font-size:15px;
+			margin:0 5px 0 0 !important;
+		 }
+	.headerSpec{
+	border-bottom: 2px inset #428BCA;
+    line-height: 40px;
+    width: 100%;
+	}
+	.jumbotron.light{
+		background-color:#F5F5F5;
+		color: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+		margin-bottom: 20px;
+		padding: 10px 50px 30px;
+	}
+	.Theader{
+		color:#fff;
+	}
+	
+	table  div.form-group{
+		margin-bottom:0px !important;
+		padding: 0 2px !important;
+	}
+	
+	.rotated{ 
+		font-weight: bold;
+    height: 16px;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    transform: rotate(-90deg);
+    vertical-align: middle;
+    width: 40px;
+	}
+        
+        .submittedpage31{
+    position: absolute;
+    left: 500px;
+    top: 230px;
+        }
+        
+        .submittedpage32{
+    position: absolute;
+    left: 715px;
+    top: 230px;
+        }
+        
+        .submittedpage33{
+    position: absolute;
+    left: 500px;
+    top: 315px;
+        }
+        
+        .gosearchbutton{
+    position: absolute;
+    left: 604px;
+    top: auto;
+        }

@@ -34,7 +34,7 @@ public class ManualStartController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            Runtime.getRuntime().exec("D:\\test.bat");
+            Process p =  Runtime.getRuntime().exec("cmd /c start java test") ;  
             //new ProcessBuilder("D:\\test.bat").start();
         }
     }
