@@ -30,6 +30,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+    <%@include file="validatelogin.jsp"%>
     <%@include file="navbar.jsp"%>
 		
 	</div>

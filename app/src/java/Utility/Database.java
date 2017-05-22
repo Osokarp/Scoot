@@ -5,6 +5,7 @@
  */
 package Utility;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -76,5 +77,54 @@ public class Database {
             } finally {
                 ConnectionManager.close(conn, connection, rs);
             }
+    }
+    
+    public static boolean checkPassword(String username, String passwordHash){
+        Connection conn = null;
+            PreparedStatement connection = null;
+            ResultSet rs = null;
+            try {
+                
+                conn = ConnectionManager.getConnection();
+                connection = conn.prepareStatement("SELECT password FROM user where username = ?");
+                connection.setString(1,username);
+                rs = connection.executeQuery();
+                if (rs.next()){
+                    if (rs.getString(1).equals(passwordHash)){
+                        System.out.println("match");
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }
+                return true;
+
+            } catch (SQLException ex) {
+                 System.out.println(ex);
+            } finally {
+                ConnectionManager.close(conn, connection, rs);
+            }
+            return false;
+    }
+    
+    public static boolean changePassword(String username, String password) throws UnsupportedEncodingException, SQLException{
+        Connection conn = null;
+            PreparedStatement connection = null;
+            ResultSet rs = null;
+            try {
+                
+                conn = ConnectionManager.getConnection();
+                connection = conn.prepareStatement("UPDATE user SET password = ? where username = ?");
+                connection.setString(1,Encryption.sha512Encryption(password));
+                connection.setString(2,username);
+                connection.executeUpdate();
+                return true;
+
+            } catch (SQLException ex) {
+                 return false;
+            } finally {
+                ConnectionManager.close(conn, connection, rs);
+            }
+            
     }
 }

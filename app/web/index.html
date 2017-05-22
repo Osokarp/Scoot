@@ -71,13 +71,13 @@
                                     <h3 class="panel-title">Login</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <form class="form-signin">
+                                    <form class="form-signin" action="LoginController" method="POST">
                                         <input type="text" autofocus="" placeholder="User ID" class="form-control" name="username">
                                         <input type="password" placeholder="Password" class="form-control" name="password">
                                         </br>
                                         <input type="checkbox" value="remember-me"> Keep me signed in.
                                         <h6><a href="forgotpassword.html">Forgot password?</a></h6>
-                                        <a href="home.html" class="btn btn-lg btn-primary btn-block">Sign in</a>
+                                        <input type="submit" value="Sign In" class="btn btn-lg btn-primary btn-block"/>
                                     </form>
                                 </div>
 

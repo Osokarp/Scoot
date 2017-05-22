@@ -5,27 +5,26 @@
  */
 package Controller;
 
-import Utility.ConnectionManager;
+import Utility.Database;
 import Utility.Encryption;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author PrakosoNB
  */
-@WebServlet(name = "LoginController", urlPatterns = {"/LoginController"})
-public class LoginController extends HttpServlet {
+@WebServlet(name = "ChangePasswordController", urlPatterns = {"/ChangePasswordController"})
+public class ChangePasswordController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -41,38 +40,20 @@ public class LoginController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            HttpSession session = request.getSession();
-            String user = request.getParameter("username");
-            String pswd = request.getParameter("password");
-            String pswdHash = Encryption.sha512Encryption(pswd);
-            Connection conn = null;
-            PreparedStatement connection = null;
-            ResultSet rs = null;
-        
-            try {
-
-                conn = ConnectionManager.getConnection();
-                connection = conn.prepareStatement("SELECT password FROM user where username = ?");
-                connection.setString(1, user);
-                rs = connection.executeQuery();
-                while (rs.next()){
-                    String dbPswd = rs.getString(1);
-                    System.out.println(pswdHash);
-                    System.out.println(dbPswd);
-                    if (dbPswd.equals(pswdHash)){
-                        session.setAttribute("user", user);
-                        System.out.println("Successful");
-                        response.sendRedirect("mainmenu.jsp");
-                        return;
-                    }
-                }
-
-            } catch (SQLException ex) {
-                 System.out.println(ex);
-            } finally {
-                ConnectionManager.close(conn, connection, rs);
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            String newpassword = request.getParameter("newpassword");
+            String pswdHash = Encryption.sha512Encryption(password);
+            if (!Database.checkPassword(username,pswdHash)){
+                out.print("Your current password is incorrect!");
+            }else{
+                Database.changePassword(username, newpassword);
+                out.print("Your password has been successfully changed!");
             }
-            response.sendRedirect("index.html");
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(ChangePasswordController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(ChangePasswordController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

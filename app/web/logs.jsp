@@ -12,7 +12,7 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
-
+        <%@include file="validatelogin.jsp"%>
         <%@include file="navbar.jsp"%>
         <div class="featurette-divider"/>
 
@@ -63,14 +63,13 @@
                             </td>
                             </tr>
                             <%}%>
-                        </table>
-                            
-                            
-                            
+                        </table>  
+                        <br>
+                        <p style="text-align:center">
                         <%
                             if (p - 1 > 0){
                                 %>
-                                <a href="logs.jsp?p=<%=p-1%>&search=<%=500*(p-1)-100%>">Prev</a>
+                                <a href="logs.jsp?p=<%=p-1%>&search=<%=500*(p-1)-100%>" style="font-size: 20px;">Prev</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <%
                             }
                             int noPages = (int)Math.ceil(logs.length()/50.0/9);
@@ -80,11 +79,11 @@
                                 
                                 if (i == max/50){
                                     %>
-                                    <a href="logs.jsp?p=<%=p%>&search=<%=p*50*(i-1)%>"><%=i%></a>
+                                    <a href="logs.jsp?p=<%=p%>&search=<%=p*50*(i-1)%>" style="font-size: 20px;"><%=i%></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                        <%
                                 }
                                 else{%>
-                                <a href="logs.jsp?p=<%=p%>&search=<%=p*50*(i-1)%>"><%=i%></a>
+                                <a href="logs.jsp?p=<%=p%>&search=<%=p*50*(i-1)%>" style="font-size: 20px;"><%=i%></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <%        
                                 }
                                 
@@ -97,13 +96,13 @@
                                 
                                 if (i == max/50){
                                     %>
-                                    <a href="logs.jsp?p=<%=p%>&search=<%=50*(i-1)%>"><%=i%></a>
+                                    <a href="logs.jsp?p=<%=p%>&search=<%=50*(i-1)%>" style="font-size: 20px;"><%=i%></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                        <%
                                 }
                                 else{%>
-                                <a href="logs.jsp?p=<%=p%>&search=<%=50*(i-1)%>"><%=i%></a>
+                                    <a href="logs.jsp?p=<%=p%>&search=<%=50*(i-1)%>" style="font-size: 20px;"><%=i%></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <%        
-                                }
+                                }   
                                 
                                 %>
                                 
@@ -114,9 +113,9 @@
                         %>
                         <%
                             if (p+1 <= noPages){%>
-                            <a href="logs.jsp?p=<%=p+1%>&search=<%=500*(p)-50%>">Next</a>
+                            <a href="logs.jsp?p=<%=p+1%>&search=<%=500*(p)-50%>" style="font-size: 20px;">Next</a>
                             <%}%>
-                    
+                        </p>
                         <div class="col-lg-4">
 
                             </br>

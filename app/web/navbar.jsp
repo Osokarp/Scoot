@@ -1,3 +1,8 @@
+<%
+    if (request.getRequestURL().toString().contains("navbar.jsp")){
+        response.sendRedirect("index.html");
+    }
+    %>
 <div class="navbar-wrapper">
 
             <div class="container">
@@ -15,22 +20,19 @@
                             <ul class="nav navbar-nav navbar-left">
                                 <li class=""><a href="mainmenu.jsp"><i class="fa fa-home"></i> Home</a></li>
                                 <li class="dropdown">
-                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Requests<b class="caret"></b></a>
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-pencil-square-o"></i> Menu<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="logs.html"><i class="fa fa-file-text-o"></i> &nbsp;View Logs</a></li>
+                                        <li><a href="logs.jsp"><i class="fa fa-file-text-o"></i> &nbsp;View Logs</a></li>
+                                        <li><a href="startprocess.jsp"><i class="fa fa-file-text-o"></i> &nbsp;Start System</a></li>
+                                        <li><a href="changepswd.jsp"><i class="fa fa-file-text-o"></i> &nbsp;Change Password</a></li>
                                         <li class="divider"></li>
-                                        <li class="dropdown-header">Refund Requests Parameters</li>
-                                        <li><a href="requestoverview.html"><i class="fa fa-eye"></i>&nbsp;Overview</a></li>
-                                        <li><a href="#"><i class="fa fa-pencil"></i> &nbsp;Modify</a></li>
-                                        <li class="divider"></li>
-                                        <li class="dropdown-header">Notify Pax</li>
-                                        <li><a href="#"><i class="fa fa-times"></i>  &nbsp;Rejected Requests</a></li>
+                                        
                                         
                                 </li>
                                 </li>
                                 
                             </ul>
-                                    <li class=""><input type="button" value="Log Out" class="btn btn-default" style="margin-left:700px;margin-top:10px"/></li>
+                                <li class=""><a href="logout.jsp" class="btn btn-default" style="margin-left:700px;;color:white;">Log Out</a></li>
                         </ul>
                         
                         <span class="logoSQ"><img alt="SIA" src="images/Scoot_Logo.png" class="logoImg"></span>

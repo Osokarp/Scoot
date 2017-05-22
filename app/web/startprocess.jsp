@@ -28,14 +28,28 @@
         </style>
         <script>
             function startTime(hi) {
+                
+                document.getElementById("time").innerHTML = hi;
 
+            }
+            function start(){
+                var i = 1;
+                setInterval(function() {
+                    startTime(i++);
+                }, 1000);
             }
         </script>
     </head>
     <!-- NAVBAR
     ================================================== -->
-    <body onload="startTime(1)">
-
+    <script>
+        function myFunction() {
+    alert('Hello');
+}
+        </script>
+        
+    <body>
+        <%@include file="validatelogin.jsp"%>
         <%@include file="navbar.jsp"%>
 
         <div class="featurette-divider"/>
@@ -53,14 +67,14 @@
 
                     <div class="row">
                         <h2><p style="text-align:center">System Status</p></h2>
-                        <h2><p id="time" style="text-align:center">0</p></h2>
-                        <h2><p id="time" style="color:red;text-align:center">OFFLINE</p></h2>
-                        <h2><p id="time" style="color:green;text-align:center">ONLINE</p></h2>
+                        <h2><p id="time" style="text-align:center"></p></h2>
+                        <h2><p id="offline" style="color:red;text-align:center">OFFLINE</p></h2>
+                        <h2><p id="online" style="color:green;text-align:center">ONLINE</p></h2>
                         <img alt="140x140" src="images/barchart.png" class="img-circle" style="width: 140px; height: 140px;">
                         <h2>Status Summary</h2>
                         <p>Check status of all submitted refund requests.</p>
                         <p style="text-align:center"><a href="requestoverview.html" class="btn btn-default">View System Log</a></p>
-                        <p style="text-align:center"><input type="button" value="Start" onclick="start()"class="btn btn-default"/></p>
+                        <p style="text-align:center"><button onclick="start()">Help</button></p>
 
                         <div class="col-lg-4">
 

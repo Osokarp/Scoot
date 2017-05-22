@@ -35,7 +35,7 @@
     <!-- NAVBAR
     ================================================== -->
     <body onload="startTime(1)">
-
+        <%@include file="validatelogin.jsp"%>
         <%@include file="navbar.jsp"%>
 
         <div class="featurette-divider"/>
