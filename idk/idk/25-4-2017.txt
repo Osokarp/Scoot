@@ -1,0 +1,48 @@
+25-4-2017 15:34:9:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:34:10:0004606:200:Successful request for ssqe ticket
+25-4-2017 15:35:47:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:35:48:0004606:200:Successful request for ssqe ticket
+25-4-2017 15:36:40:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:36:41:0004606:200:Successful request for ssqe ticket
+25-4-2017 15:37:44:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:37:44:0004606:200:Successful request for ssqe ticket
+25-4-2017 15:41:4:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:41:4:0004606:200:Successful request for ssqe ticket
+25-4-2017 15:41:58:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:41:58:0004606:200:Successful request for ssqe ticket
+25-4-2017 15:46:41:0001302:200:Successful request for itops ticket
+25-4-2017 15:46:42:0001384:200:Successful request for itops ticket
+25-4-2017 15:48:23:0001302:200:Successful request for ssqe ticket
+25-4-2017 15:48:23:0001302:200:Successful request for itops ticket
+25-4-2017 15:48:24:0001384:200:Successful request for itops ticket
+25-4-2017 15:50:53:0001302:200:Successful request for itops ticket
+25-4-2017 15:50:53:0001384:200:Successful request for itops ticket
+25-4-2017 16:0:47:0001302:200:Successful request for ssqe ticket
+25-4-2017 16:16:19:0001302:200:Successful request for ssqe ticket
+25-4-2017 16:16:20:0001302:200:Successful request for itops ticket
+25-4-2017 16:28:5:0001302:200:Successful request for ssqe ticket
+25-4-2017 16:39:0:0001302:200:Successful request for ssqe ticket
+25-4-2017 16:46:29:0001302:200:Successful request for ssqe ticket
+25-4-2017 16:49:1:0001302:200:Successful request for ssqe ticket
+25-4-2017 16:50:39:0001302:200:Successful request for ssqe ticket
+25-4-2017 17:1:55:0001384:0:Missing fields, emailed HR
+25-4-2017 17:1:55:0004607:0:Missing fields, emailed HR
+25-4-2017 17:1:55:0004606:0:Missing fields, emailed HR
+25-4-2017 17:7:24:0001384:0:Missing fields, emailed HR
+25-4-2017 17:7:25:0004607:0:Missing fields, emailed HR
+25-4-2017 17:7:25:0004606:0:Missing fields, emailed HR
+25-4-2017 17:10:46:0001384:0:Missing fields, emailed HR
+25-4-2017 17:10:46:0004607:0:Missing fields, emailed HR
+25-4-2017 17:10:46:0004606:0:Missing fields, emailed HR
+25-4-2017 17:13:6:0001384:0:Missing fields, emailed HR
+25-4-2017 17:13:6:0004607:0:Missing fields, emailed HR
+25-4-2017 17:13:6:0004606:0:Missing fields, emailed HR
+25-4-2017 17:15:5:0001384:0:Missing fields, emailed HR
+25-4-2017 17:15:5:0004607:0:Missing fields, emailed HR
+25-4-2017 17:15:5:0004606:0:Missing fields, emailed HR
+25-4-2017 17:15:6:0001302:0:Attempted ticket creation on ServiceNow for >= 30 times, emailed System Administrator to manually process request for ssqe ticket
+25-5-2017 17:27:16:0001384:0:Missing fields, emailed HR
+25-5-2017 17:27:16:0004607:0:Missing fields, emailed HR
+25-5-2017 17:27:16:0004606:0:Missing fields, emailed HR
+25-5-2017 17:27:16:0001302:0:Attempted ticket creation on ServiceNow for >= 30 times, emailed System Administrator to manually process request for ssqe ticket
+25-5-2017 17:29:22:0001302:0:Attempted ticket creation on ServiceNow for >= 30 times, emailed System Administrator to manually process request for ssqe ticket
